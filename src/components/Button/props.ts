@@ -6,7 +6,7 @@ export interface ButtonProps {
     /**
      * Set the onClick function
      */
-    onClick?: (event: Event) => void
+    onClick?: () => void
     /**
      * Set the disable state for the button
      */

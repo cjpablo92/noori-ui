@@ -1,8 +1,8 @@
-export enum ButtonsEnum {
+export enum ButtonTypeEnum {
     primary = 'primary',
     secondary = 'secondary',
     terciary = 'terciary',
   }
   
-  export type Button = keyof typeof ButtonsEnum
+  export type ButtonType = keyof typeof ButtonTypeEnum
   

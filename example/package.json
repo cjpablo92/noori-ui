@@ -1,5 +1,5 @@
 {
-  "name": "archie-example",
+  "name": "noori-ui-example",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
@@ -10,7 +10,7 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
-    "@Backlot-Cars/archie": "file:..",
+    "noori-ui": "file:..",
     "@types/node": "file:../node_modules/@types/node",
     "@types/react": "file:../node_modules/@types/react",
     "@types/react-dom": "file:../node_modules/@types/react-dom",

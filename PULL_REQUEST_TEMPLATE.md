@@ -1,6 +1,6 @@
 ## Github issue
 
-[Github issue](https://github.com/cjpablo92/noori-ui/issues/{ticket_id})
+[Github issue](https://github.com/cjpablo92/noori-ui/issues/{issue_id})
 
 ## Description
 

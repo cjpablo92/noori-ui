@@ -21,6 +21,6 @@ Slight description about your changes of fixes.
 
 ## Merge copy
 
-message: 
+message:
 
 > message example: _Updated button component to support size prop @someone_

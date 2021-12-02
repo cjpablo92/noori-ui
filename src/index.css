@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'TODO';
+  font-family: "TODO";
   /* src: url('/fonts/TODO/mpb.woff') format('woff'),
     url('/fonts/TODO/mpb.ttf') format('ttf'),
     url('/fonts/TODO/mpb.woff2') format('woff2'),
@@ -11,7 +11,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'TODO';
+  font-family: "TODO";
   /* src: url('/fonts/TODO/mpb.woff') format('woff'),
     url('/fonts/TODO/mpb.ttf') format('ttf'),
     url('/fonts/TODO/mpb.woff2') format('woff2'),
@@ -25,7 +25,7 @@
 }
 
 @font-face {
-  font-family: 'TODO';
+  font-family: "TODO";
   /* src: url('/fonts/TODO/mpb.woff') format('woff'),
     url('/fonts/TODO/mpb.ttf') format('ttf'),
     url('/fonts/TODO/mpb.woff2') format('woff2'),
@@ -40,7 +40,7 @@
 }
 
 @font-face {
-  font-family: 'TODO';
+  font-family: "TODO";
   /* src: url('/fonts/TODO/mpb.woff') format('woff'),
     url('/fonts/TODO/mpb.ttf') format('ttf'),
     url('/fonts/TODO/mpb.woff2') format('woff2'),
@@ -55,21 +55,14 @@
 
 /* Webfont: icons-default */
 @font-face {
-  font-family: 'Icons';
+  font-family: "Icons";
   font-style: normal;
   font-weight: 400;
-  src: url('url/icons/icons-default.eot'); /* IE9 Compat Modes */
-  src: url('url/icons/icons-default.eot?#iefix')
-      format('embedded-opentype'),
-    /* IE6-IE8 */
-      url('url/icons/icons-default.woff')
-      format('woff'),
-    /* Modern Browsers */
-      url('url/icons/icons-default.woff2')
-      format('woff2'),
-    /* Modern Browsers */
-      url('url/icons/icons-default.ttf')
-      format('truetype'); /* Safari, Android, iOS */
+  src: url("url/icons/icons-default.eot"); /* IE9 Compat Modes */
+  src: url("url/icons/icons-default.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("url/icons/icons-default.woff") format("woff"),
+    /* Modern Browsers */ url("url/icons/icons-default.woff2") format("woff2"),
+    /* Modern Browsers */ url("url/icons/icons-default.ttf") format("truetype"); /* Safari, Android, iOS */
   text-rendering: geometricPrecision;
   unicode-range:
       /* Arrows */ U+003C, U+003E, U+142f, U+1431, U+2190,
@@ -86,21 +79,14 @@
 }
 /* Webfont: icons-active */
 @font-face {
-  font-family: 'Icons';
+  font-family: "Icons";
   font-style: normal;
   font-weight: 700;
-  src: url('<url>icons-active.eot'); /* IE9 Compat Modes */
-  src: url('<url>icons-active.eot?#iefix')
-      format('embedded-opentype'),
-    /* IE6-IE8 */
-      url('<url>icons-active.woff')
-      format('woff'),
-    /* Modern Browsers */
-      url('<url>icons-active.woff2')
-      format('woff2'),
-    /* Modern Browsers */
-      url('<url>icons-active.ttf')
-      format('truetype'); /* Safari, Android, iOS */
+  src: url("<url>icons-active.eot"); /* IE9 Compat Modes */
+  src: url("<url>icons-active.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("<url>icons-active.woff") format("woff"),
+    /* Modern Browsers */ url("<url>icons-active.woff2") format("woff2"),
+    /* Modern Browsers */ url("<url>icons-active.ttf") format("truetype"); /* Safari, Android, iOS */
   text-rendering: geometricPrecision;
   unicode-range:
       /* Arrows */ U+003C, U+003E, U+142f, U+1431, U+2190,

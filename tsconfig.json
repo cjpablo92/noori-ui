@@ -4,10 +4,7 @@
     "jsx": "react",
     "outDir": "dist",
     "module": "esnext",
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "lib": ["dom", "esnext"],
     "moduleResolution": "node",
     "sourceMap": true,
     "declaration": true,
@@ -20,9 +17,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
-    "types": [
-      "jest"
-    ],
+    "types": ["jest"],
     "target": "es5",
     "allowJs": true,
     "skipLibCheck": true,
@@ -32,10 +27,7 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": [
-    "src",
-    "./jest.setup.ts"
-  ],
+  "include": ["src", "./jest.setup.ts"],
   "exclude": [
     "node_modules",
     "dist",

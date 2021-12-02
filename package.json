@@ -31,11 +31,12 @@
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
+    "prepare": "run-s husky install build",
     "test:ci": "run-s test:unit test:lint test:build",
     "test": "jest --watch",
     "test:build": "run-s build",
     "test:lint": "eslint . --ext .ts,.tsx",
+    "test:prettier": "npx prettier --check .",
     "test:unit": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
@@ -54,10 +55,14 @@
     "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.10",
     "@types/styled-components": "^5.1.7",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
     "jest-styled-components": "^7.0.3",
+    "lint-staged": "^12.1.2",
     "microbundle-crl": "^0.13.11",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.2.1",
+    "prettier": "^2.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "ts-jest": "^26.5.3",
@@ -68,5 +73,8 @@
   ],
   "dependencies": {
     "styled-components": "^5.2.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

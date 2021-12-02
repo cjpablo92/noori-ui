@@ -36,18 +36,15 @@
     "test": "jest --watch",
     "test:build": "run-s build",
     "test:lint": "eslint . --ext .ts,.tsx",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "test:coverage": "jest --coverage",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "test:unit": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-jsx": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
@@ -57,28 +54,12 @@
     "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.10",
     "@types/styled-components": "^5.1.7",
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
-    "@typescript-eslint/parser": "^5.5.0",
-    "babel-eslint": "^10.0.3",
-    "cross-env": "^7.0.3",
-    "eslint": "^8.3.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.2.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-standard": "^4.0.1",
-    "gh-pages": "^2.2.0",
     "jest-styled-components": "^7.0.3",
-    "microbundle-crl": "^0.13.10",
+    "microbundle-crl": "^0.13.11",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^0.9.5",
     "ts-jest": "^26.5.3",
     "typescript": "^3.7.5"
   },
@@ -86,8 +67,6 @@
     "dist"
   ],
   "dependencies": {
-    "@types/react-tabs": "^2.3.2",
-    "react-tabs": "^3.2.0",
     "styled-components": "^5.2.1"
   }
 }

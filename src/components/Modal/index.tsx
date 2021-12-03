@@ -14,7 +14,8 @@ const Modal: React.FC<ModalProps> = ({
   isOpen,
   onAfterOpen,
   onRequestClose,
-  //   title,
+  title,
+  appElement,
 }) => {
   return (
     <ReactModal
@@ -22,7 +23,8 @@ const Modal: React.FC<ModalProps> = ({
       isOpen={isOpen}
       onAfterOpen={onAfterOpen}
       onRequestClose={onRequestClose}
-      // contentLabel={title}
+      contentLabel={title}
+      appElement={appElement}
     >
       {children}
     </ReactModal>

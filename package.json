@@ -4,7 +4,22 @@
   "description": "0 config Next js UI library",
   "author": "cjpablo92",
   "license": "MIT",
-  "repository": "git@github.com:cjpablo92/noori-ui.git",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cjpablo92/noori-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cjpablo92/noori-ui/issues/new"
+  },
+  "keywords": [
+    "nextjs",
+    "nextjs ui",
+    "components",
+    "modern components",
+    "react components",
+    "react ui"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",

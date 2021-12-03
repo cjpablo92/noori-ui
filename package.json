@@ -43,7 +43,6 @@
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s husky install build",
     "test:ci": "run-s test:unit test:lint test:build",
     "test": "jest --watch",
     "test:build": "run-s build",

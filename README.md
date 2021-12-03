@@ -16,3 +16,5 @@
 ```
 
 ## Contribute
+
+If you want to contribute to this project please [see the contribution guide](CONTRIBUTING.md)

@@ -4,7 +4,22 @@
   "description": "0 config Next js UI library",
   "author": "cjpablo92",
   "license": "MIT",
-  "repository": "git@github.com:cjpablo92/noori-ui.git",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cjpablo92/noori-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cjpablo92/noori-ui/issues/new"
+  },
+  "keywords": [
+    "nextjs",
+    "nextjs ui",
+    "components",
+    "modern components",
+    "react components",
+    "react ui"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -28,7 +43,6 @@
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s husky install build",
     "test:ci": "run-s test:unit test:lint test:build",
     "test": "jest --watch",
     "test:build": "run-s build",

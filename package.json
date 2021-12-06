@@ -51,7 +51,7 @@
     "test": "jest --watch",
     "test:build": "run-s build",
     "test:lint": "npx prettier --check .",
-    "test:unit": "jest",
+    "test:unit": "jest --",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "storybook": "start-storybook -p 6006",

@@ -1,0 +1,24 @@
+name: Bump Package Version On Merge
+
+# on:
+# pull_request:
+#   types: [closed]
+#   branches:
+#     - main
+
+jobs:
+  bump-package-version:
+    name: Bumping package version
+    # Only run if the PR closed by merging
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: copapow/version-bump-package@v1
+        with:
+          default_branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: EndBug/add-and-commit@v7
+        with:
+          branch: main
+          message: "automatic bump package version"

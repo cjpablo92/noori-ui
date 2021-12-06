@@ -1,0 +1,32 @@
+name: Publish to github Packages
+# on:
+#   workflow_run:
+#     workflows: ["Bump Package Version On Merge"]
+#     types:
+#       - completed
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm ci
+      - run: npm test
+  publish-new-version:
+    needs: ci
+    name: Publish new version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo ref is ${{ github.ref }}
+      - run: echo sha is ${{ github.sha }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: https://npm.pkg.github.com/
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}

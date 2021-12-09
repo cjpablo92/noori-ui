@@ -2,6 +2,7 @@ import ReactModal from "react-modal";
 import React from "react";
 import { ModalProps } from "./props";
 import styled from "styled-components";
+import styles from "./styles";
 
 /*
 TODO: read more about styling the react-modal
@@ -32,5 +33,5 @@ const Modal: React.FC<ModalProps> = ({
 };
 
 export default styled(Modal)`
-  font-weight: normal;
+  ${styles}
 `;

@@ -48,7 +48,7 @@
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "lint:fix": "npx prettier --write .",
     "test:ci": "run-s test:unit test:lint test:build",
-    "test": "jest --watch",
+    "test": "jest --",
     "test:build": "run-s build",
     "test:lint": "npx prettier --check .",
     "test:unit": "jest --",

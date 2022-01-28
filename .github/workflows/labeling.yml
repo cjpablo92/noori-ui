@@ -1,0 +1,47 @@
+# This is a basic workflow to help you get started with Actions
+
+name: PR label check
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  pull_request:
+    types: [opened, labeled, unlabeled, synchronize]
+    branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  label_check:
+    name: Label check
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Verify Pull Request Labels
+        uses: jesusvasquez333/verify-pr-label-action@v1.4.0
+        with:
+          # The GitHub token
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          # List of valid labels
+          valid-labels: "minor, major, patch"
+          # List of invalid labels
+          invalid-labels: "help wanted, invalid"
+          # The Pull Request number
+          pull-request-number: "${{ github.event.pull_request.number }}"
+          # Should the action post reviews on PRs
+          disable-reviews: true
+
+      # - name: Get PR labels
+      #   id: pr-labels
+      #   uses: joerick/pr-labels-action@v1.0.6
+
+      # - name: test previous action
+      #   run: |
+      #     echo 'si tiene el label minor'
+      #   if: contains(steps.pr-labels.outputs.labels, 'minor')

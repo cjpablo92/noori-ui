@@ -35,6 +35,7 @@
     "**/test.ts",
     "**/test.tsx",
     "**/*.test.tsx",
-    "**/*.test.ts"
+    "**/*.test.ts",
+    "**/*.stories.ts"
   ]
 }

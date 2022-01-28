@@ -48,10 +48,10 @@
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "lint:fix": "npx prettier --write .",
     "test:ci": "run-s test:unit test:lint test:build",
-    "test": "jest --watch",
+    "test": "jest --",
     "test:build": "run-s build",
     "test:lint": "npx prettier --check .",
-    "test:unit": "jest",
+    "test:unit": "jest --",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "storybook": "start-storybook -p 6006",
@@ -66,6 +66,7 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-react": "^7.12.10",
     "@storybook/addon-actions": "^6.4.7",
+    "@storybook/addon-docs": "^6.4.8",
     "@storybook/addon-essentials": "^6.4.7",
     "@storybook/addon-links": "^6.4.7",
     "@storybook/react": "^6.4.7",
@@ -96,6 +97,8 @@
     "dist"
   ],
   "dependencies": {
+    "@types/react-modal": "^3.13.1",
+    "react-modal": "^3.14.4",
     "styled-components": "^5.2.1"
   },
   "lint-staged": {

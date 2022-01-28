@@ -1,0 +1,16 @@
+name: "check dependencies with bundlephobia"
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  bundlecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: bundlephobia-checker
+        uses: carlesnunez/check-my-bundlephobia@v1.7.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          strict: true
+          threshold: 500
+          ignore-dev-dependencies: true

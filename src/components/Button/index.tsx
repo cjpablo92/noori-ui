@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       key={id}
       disabled={disabled}
-      className={type}
+      className={"base " + type}
     >
       {children}
     </button>
@@ -25,5 +25,13 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 export default styled(Button)`
-  ${style}
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  color: white;
+  background-color: #1ea7fd;
+  padding: 0.75em 3em;
 `;
